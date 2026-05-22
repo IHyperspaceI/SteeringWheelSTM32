@@ -1,0 +1,10 @@
+config load "C:\Users\will\Desktop\SteeringWheelSTM32\STW\STWCube\STWCube.ioc"
+project toolchain STM32CubeIDE
+
+SetStructure Advanced
+
+project setCustomFWPath "C:\Users\will\STM32Cube\Repository\STM32Cube_FW_H7_V1.9.1"
+
+project generate 
+
+exit wait

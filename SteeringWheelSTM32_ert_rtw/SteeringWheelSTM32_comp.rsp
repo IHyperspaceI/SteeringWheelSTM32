@@ -1,0 +1,21 @@
+-IC:/Users/will/Desktop/SteeringWheelSTM32/STW
+-IC:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/include
+-I"C:/Program Files/MATLAB/R2024b/toolbox/target/shared/svd/common/include"
+-IC:/Users/will/Desktop/SteeringWheelSTM32/STW/SteeringWheelSTM32_ert_rtw
+-I"C:/Program Files/MATLAB/R2024b/extern/include"
+-I"C:/Program Files/MATLAB/R2024b/simulink/include"
+-I"C:/Program Files/MATLAB/R2024b/rtw/c/src"
+-I"C:/Program Files/MATLAB/R2024b/rtw/c/src/ext_mode/common"
+-I"C:/Program Files/MATLAB/R2024b/rtw/c/ert"
+-I"C:/Program Files/MATLAB/R2024b/toolbox/shared/can/src/scanutil"
+-I"C:/Program Files/MATLAB/R2024b/toolbox/target/shared/armcortexmbase/scheduler/include"
+-I"C:/Program Files/MATLAB/R2024b/toolbox/target/shared/armcortexmbase/xcp/include"
+-I"C:/Program Files/MATLAB/R2024b/rtw/c/src/ext_mode/serial"
+-IC:/ProgramData/MATLAB/SupportPackages/R2024b/3P.instrset/cmsis.instrset/CMSIS/Core/Include
+-IC:/ProgramData/MATLAB/SupportPackages/R2024b/3P.instrset/cmsis_dsp.instrset/Include
+-IC:/ProgramData/MATLAB/SupportPackages/R2024b/3P.instrset/cmsis_dsp.instrset/Include/dsp
+-IC:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc
+-IC:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy
+-IC:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/CMSIS/Device/ST/STM32H7xx/Include
+-IC:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/CMSIS/Include
+-IC:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Core/Inc

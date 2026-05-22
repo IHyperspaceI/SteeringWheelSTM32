@@ -1,0 +1,12 @@
+rt_zcfcn.o: \
+ C:/Users/will/Desktop/SteeringWheelSTM32/STW/SteeringWheelSTM32_ert_rtw/rt_zcfcn.c \
+ C:/Users/will/Desktop/SteeringWheelSTM32/STW/SteeringWheelSTM32_ert_rtw/zero_crossing_types.h \
+ C:/Users/will/Desktop/SteeringWheelSTM32/STW/SteeringWheelSTM32_ert_rtw/rtwtypes.h \
+ C:/Users/will/Desktop/SteeringWheelSTM32/STW/SteeringWheelSTM32_ert_rtw/rt_zcfcn.h \
+ C:/Program\ Files/MATLAB/R2024b/simulink/include/solver_zc.h \
+ C:/Users/will/Desktop/SteeringWheelSTM32/STW/SteeringWheelSTM32_ert_rtw/rtwtypes.h
+C:/Users/will/Desktop/SteeringWheelSTM32/STW/SteeringWheelSTM32_ert_rtw/zero_crossing_types.h:
+C:/Users/will/Desktop/SteeringWheelSTM32/STW/SteeringWheelSTM32_ert_rtw/rtwtypes.h:
+C:/Users/will/Desktop/SteeringWheelSTM32/STW/SteeringWheelSTM32_ert_rtw/rt_zcfcn.h:
+C:/Program\ Files/MATLAB/R2024b/simulink/include/solver_zc.h:
+C:/Users/will/Desktop/SteeringWheelSTM32/STW/SteeringWheelSTM32_ert_rtw/rtwtypes.h:

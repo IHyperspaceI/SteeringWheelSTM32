@@ -176,10 +176,10 @@ SECTIONS
 
  .dma_buffer (NOLOAD):
     { *(.dma_buffer)
-    } >RAM
+    } >RAM_D2
 
  .bdma_buffer (NOLOAD):
    { *(.bdma_buffer)
-    } >RAM
+    } >RAM_D3
 
 }

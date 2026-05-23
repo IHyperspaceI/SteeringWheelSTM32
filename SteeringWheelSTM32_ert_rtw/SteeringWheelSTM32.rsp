@@ -36,6 +36,7 @@ stm32h7xx_hal_exti.o
 stm32h7xx_ll_spi.o
 stm32h7xx_hal_tim.o
 stm32h7xx_hal_tim_ex.o
+stm32h7xx_ll_tim.o
 system_stm32h7xx.o
 syscalls.o
 sysmem.o

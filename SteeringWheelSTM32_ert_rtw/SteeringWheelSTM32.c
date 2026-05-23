@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'SteeringWheelSTM32'.
  *
- * Model version                  : 13.117
+ * Model version                  : 13.121
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Thu May 21 19:51:06 2026
+ * C/C++ source code generated on : Sat May 23 22:25:23 2026
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
@@ -145,7 +145,7 @@ void S_SPIControllerTransfer1_d_Init(DW_SPIControllerTransfer1_S_f_T *localDW)
 {
   STM32_SPI_ModuleStruct_T b;
 
-  /* Start for MATLABSystem: '<S8>/SPI Controller Transfer1' */
+  /* Start for MATLABSystem: '<S11>/SPI Controller Transfer1' */
   localDW->obj.matlabCodegenIsDeleted = false;
   localDW->objisempty = true;
   localDW->obj.isInitialized = 1;
@@ -162,7 +162,7 @@ void Steeri_SPIControllerTransfer1_p(const uint8_T rtu_0[3],
   uint8_T tmp[3];
   uint8_T status;
 
-  /* MATLABSystem: '<S8>/SPI Controller Transfer1' */
+  /* MATLABSystem: '<S11>/SPI Controller Transfer1' */
   status = MW_STM32_SPI_SetFormat(localDW->obj.MW_SPI_HANDLE, 0U, 1792U,
     MW_SPI_MODE_2);
   if (status == 0) {
@@ -174,13 +174,13 @@ void Steeri_SPIControllerTransfer1_p(const uint8_T rtu_0[3],
     LL_GPIO_SetOutputPin(portNameLoc, 16U);
   }
 
-  /* End of MATLABSystem: '<S8>/SPI Controller Transfer1' */
+  /* End of MATLABSystem: '<S11>/SPI Controller Transfer1' */
 }
 
 /* Termination for atomic system: */
 void S_SPIControllerTransfer1_o_Term(DW_SPIControllerTransfer1_S_f_T *localDW)
 {
-  /* Terminate for MATLABSystem: '<S8>/SPI Controller Transfer1' */
+  /* Terminate for MATLABSystem: '<S11>/SPI Controller Transfer1' */
   if (!localDW->obj.matlabCodegenIsDeleted) {
     localDW->obj.matlabCodegenIsDeleted = true;
     if ((localDW->obj.isInitialized == 1) && localDW->obj.isSetupComplete) {
@@ -191,14 +191,14 @@ void S_SPIControllerTransfer1_o_Term(DW_SPIControllerTransfer1_S_f_T *localDW)
     }
   }
 
-  /* End of Terminate for MATLABSystem: '<S8>/SPI Controller Transfer1' */
+  /* End of Terminate for MATLABSystem: '<S11>/SPI Controller Transfer1' */
 }
 
 static void SteeringWheelS_SystemCore_setup(stm32cube_blocks_AnalogInputF_T *obj)
 {
   ADC_Type_T adcStructLoc;
 
-  /* Start for MATLABSystem: '<S12>/Analog to Digital Converter' */
+  /* Start for MATLABSystem: '<S15>/Analog to Digital Converter' */
   obj->isInitialized = 1;
   obj->ADCInternalBuffer = GET_ADC1_DMA_BUFFER();
   adcStructLoc.InjectedNoOfConversion = 0U;
@@ -231,59 +231,59 @@ void SteeringWheelSTM32_step(void)
   uint8_T status;
   boolean_T rtb_Step1_tmp;
 
-  /* MATLABSystem: '<S17>/Digital Port Read' */
+  /* MATLABSystem: '<S20>/Digital Port Read' */
   pinReadLoc = LL_GPIO_ReadInputPort(GPIOA);
 
   /* Logic: '<Root>/NOT2' incorporates:
-   *  MATLABSystem: '<S17>/Digital Port Read'
+   *  MATLABSystem: '<S20>/Digital Port Read'
    * */
   SteeringWheelSTM32_B.NOT2 = ((pinReadLoc & 2048U) == 0U);
 
   /* Logic: '<Root>/NOT3' incorporates:
-   *  MATLABSystem: '<S17>/Digital Port Read'
+   *  MATLABSystem: '<S20>/Digital Port Read'
    * */
   SteeringWheelSTM32_B.NOT3 = ((pinReadLoc & 4096U) == 0U);
 
   /* Logic: '<Root>/NOT1' incorporates:
-   *  MATLABSystem: '<S17>/Digital Port Read'
+   *  MATLABSystem: '<S20>/Digital Port Read'
    * */
   SteeringWheelSTM32_B.NOT1 = ((pinReadLoc & 1024U) == 0U);
 
   /* Logic: '<Root>/NOT' incorporates:
-   *  MATLABSystem: '<S17>/Digital Port Read'
+   *  MATLABSystem: '<S20>/Digital Port Read'
    * */
   SteeringWheelSTM32_B.NOT = ((pinReadLoc & 512U) == 0U);
 
-  /* Lookup_n-D: '<S10>/1-D Lookup Table2' incorporates:
-   *  Memory: '<S10>/Memory2'
+  /* Lookup_n-D: '<S13>/1-D Lookup Table2' incorporates:
+   *  Memory: '<S13>/Memory2'
    */
   SteeringWheelSTM32_B.uDLookupTable2 =
     SteeringWheelSTM32_ConstP.pooled6[plook_u32f_binckan
     (SteeringWheelSTM32_DW.Memory2_PreviousInput,
      SteeringWheelSTM32_ConstP.pooled4, 15U)];
 
-  /* Lookup_n-D: '<S10>/1-D Lookup Table' incorporates:
-   *  Memory: '<S10>/Memory'
+  /* Lookup_n-D: '<S13>/1-D Lookup Table' incorporates:
+   *  Memory: '<S13>/Memory'
    */
   SteeringWheelSTM32_B.uDLookupTable =
     SteeringWheelSTM32_ConstP.pooled6[plook_u32f_binckan
     (SteeringWheelSTM32_DW.Memory_PreviousInput,
      SteeringWheelSTM32_ConstP.pooled4, 15U)];
 
-  /* Lookup_n-D: '<S10>/1-D Lookup Table1' incorporates:
-   *  Memory: '<S10>/Memory1'
+  /* Lookup_n-D: '<S13>/1-D Lookup Table1' incorporates:
+   *  Memory: '<S13>/Memory1'
    */
   SteeringWheelSTM32_B.uDLookupTable1 =
     SteeringWheelSTM32_ConstP.pooled6[plook_u32f_binckan
     (SteeringWheelSTM32_DW.Memory1_PreviousInput,
      SteeringWheelSTM32_ConstP.pooled4, 15U)];
 
-  /* MATLABSystem: '<S12>/Analog to Digital Converter' */
+  /* MATLABSystem: '<S15>/Analog to Digital Converter' */
   regularReadADCDMA(SteeringWheelSTM32_DW.obj.ADCHandle, ADC_READ,
                     &rtb_AnalogtoDigitalConverter_0[0]);
   for (i = 0; i < 5; i++) {
     /* Gain: '<Root>/Gain4' incorporates:
-     *  MATLABSystem: '<S12>/Analog to Digital Converter'
+     *  MATLABSystem: '<S15>/Analog to Digital Converter'
      */
     SteeringWheelSTM32_B.Gain4[i] = 5.03547708E-5F * (real32_T)
       rtb_AnalogtoDigitalConverter_0[i];
@@ -722,21 +722,50 @@ void SteeringWheelSTM32_step(void)
   /* End of DataStoreRead: '<Root>/Data Store Read' */
   /* End of Outputs for SubSystem: '<Root>/CAN TX' */
 
+  /* MATLABSystem: '<S22>/Digital Port Write' */
+  portNameLoc = GPIOB;
+  if (SteeringWheelSTM32_B.NOT) {
+    i = 4;
+  } else {
+    i = 0;
+  }
+
+  LL_GPIO_SetOutputPin(portNameLoc, (uint32_T)i);
+  LL_GPIO_ResetOutputPin(portNameLoc, ~(uint32_T)i & 4U);
+
+  /* End of MATLABSystem: '<S22>/Digital Port Write' */
+
+  /* MATLABSystem: '<S24>/Digital Port Write' incorporates:
+   *  Constant: '<S4>/Constant'
+   *  RelationalOperator: '<S4>/Compare'
+   */
+  portNameLoc = GPIOB;
+  if (SteeringWheelSTM32_B.Gain4[0] <= 1.5F) {
+    i = 2;
+  } else {
+    i = 0;
+  }
+
+  LL_GPIO_SetOutputPin(portNameLoc, (uint32_T)i);
+  LL_GPIO_ResetOutputPin(portNameLoc, ~(uint32_T)i & 2U);
+
+  /* End of MATLABSystem: '<S24>/Digital Port Write' */
+
   /* Step: '<Root>/Step1' */
   rtb_Step1_tmp = !(((SteeringWheelSTM32_M->Timing.clockTick0) * 0.001) < 1.0);
 
   /* Outputs for Enabled SubSystem: '<Root>/Enabled Subsystem1' incorporates:
-   *  EnablePort: '<S8>/Enable'
+   *  EnablePort: '<S11>/Enable'
    */
-  /* RelationalOperator: '<S5>/FixPt Relational Operator' incorporates:
-   *  Constant: '<S8>/ 000: normal mode, 0: don't abort pending transmit buffers, 0: one-shot disabled, 0: CLKOUT disabled, 00: sysclk//1 | 0000 0000 | 0x00'
-   *  Constant: '<S8>/CNF1'
-   *  Constant: '<S8>/CNF2'
-   *  Constant: '<S8>/CNF3'
-   *  Constant: '<S8>/Enter Configuration Mode'
-   *  UnitDelay: '<S5>/Delay Input1'
+  /* RelationalOperator: '<S6>/FixPt Relational Operator' incorporates:
+   *  Constant: '<S11>/ 000: normal mode, 0: don't abort pending transmit buffers, 0: one-shot disabled, 0: CLKOUT disabled, 00: sysclk//1 | 0000 0000 | 0x00'
+   *  Constant: '<S11>/CNF1'
+   *  Constant: '<S11>/CNF2'
+   *  Constant: '<S11>/CNF3'
+   *  Constant: '<S11>/Enter Configuration Mode'
+   *  UnitDelay: '<S6>/Delay Input1'
    *
-   * Block description for '<S5>/Delay Input1':
+   * Block description for '<S6>/Delay Input1':
    *
    *  Store in Global RAM
    */
@@ -754,21 +783,21 @@ void SteeringWheelSTM32_step(void)
        &SteeringWheelSTM32_DW.SPIControllerTransfer4);
   }
 
-  /* End of RelationalOperator: '<S5>/FixPt Relational Operator' */
+  /* End of RelationalOperator: '<S6>/FixPt Relational Operator' */
   /* End of Outputs for SubSystem: '<Root>/Enabled Subsystem1' */
 
   /* UnitDelay: '<Root>/Unit Delay' */
   rtb_UnitDelay = SteeringWheelSTM32_DW.UnitDelay_DSTATE;
 
   /* Outputs for Enabled SubSystem: '<Root>/Enabled Subsystem2' incorporates:
-   *  EnablePort: '<S9>/Enable'
+   *  EnablePort: '<S12>/Enable'
    */
-  /* DataStoreWrite: '<S9>/Data Store Write' incorporates:
-   *  RelationalOperator: '<S6>/FixPt Relational Operator'
+  /* DataStoreWrite: '<S12>/Data Store Write' incorporates:
+   *  RelationalOperator: '<S7>/FixPt Relational Operator'
    *  UnitDelay: '<Root>/Unit Delay'
-   *  UnitDelay: '<S6>/Delay Input1'
+   *  UnitDelay: '<S7>/Delay Input1'
    *
-   * Block description for '<S6>/Delay Input1':
+   * Block description for '<S7>/Delay Input1':
    *
    *  Store in Global RAM
    */
@@ -779,33 +808,33 @@ void SteeringWheelSTM32_step(void)
 
   /* End of Outputs for SubSystem: '<Root>/Enabled Subsystem2' */
 
-  /* Switch: '<S10>/Switch2' */
+  /* Switch: '<S13>/Switch2' */
   if (SteeringWheelSTM32_B.Gain4[2] > 0.2F) {
-    /* Update for Memory: '<S10>/Memory2' */
+    /* Update for Memory: '<S13>/Memory2' */
     SteeringWheelSTM32_DW.Memory2_PreviousInput = SteeringWheelSTM32_B.Gain4[2];
   }
 
-  /* End of Switch: '<S10>/Switch2' */
+  /* End of Switch: '<S13>/Switch2' */
 
-  /* Switch: '<S10>/Switch' */
+  /* Switch: '<S13>/Switch' */
   if (SteeringWheelSTM32_B.Gain4[0] > 0.2F) {
-    /* Update for Memory: '<S10>/Memory' */
+    /* Update for Memory: '<S13>/Memory' */
     SteeringWheelSTM32_DW.Memory_PreviousInput = SteeringWheelSTM32_B.Gain4[0];
   }
 
-  /* End of Switch: '<S10>/Switch' */
+  /* End of Switch: '<S13>/Switch' */
 
-  /* Switch: '<S10>/Switch1' */
+  /* Switch: '<S13>/Switch1' */
   if (SteeringWheelSTM32_B.Gain4[1] > 0.2F) {
-    /* Update for Memory: '<S10>/Memory1' */
+    /* Update for Memory: '<S13>/Memory1' */
     SteeringWheelSTM32_DW.Memory1_PreviousInput = SteeringWheelSTM32_B.Gain4[1];
   }
 
-  /* End of Switch: '<S10>/Switch1' */
+  /* End of Switch: '<S13>/Switch1' */
 
-  /* Update for UnitDelay: '<S5>/Delay Input1'
+  /* Update for UnitDelay: '<S6>/Delay Input1'
    *
-   * Block description for '<S5>/Delay Input1':
+   * Block description for '<S6>/Delay Input1':
    *
    *  Store in Global RAM
    */
@@ -814,9 +843,9 @@ void SteeringWheelSTM32_step(void)
   /* Update for UnitDelay: '<Root>/Unit Delay' */
   SteeringWheelSTM32_DW.UnitDelay_DSTATE = rtb_Step1_tmp;
 
-  /* Update for UnitDelay: '<S6>/Delay Input1'
+  /* Update for UnitDelay: '<S7>/Delay Input1'
    *
-   * Block description for '<S6>/Delay Input1':
+   * Block description for '<S7>/Delay Input1':
    *
    *  Store in Global RAM
    */
@@ -837,13 +866,13 @@ void SteeringWheelSTM32_initialize(void)
   {
     STM32_SPI_ModuleStruct_T b;
 
-    /* InitializeConditions for Memory: '<S10>/Memory2' */
+    /* InitializeConditions for Memory: '<S13>/Memory2' */
     SteeringWheelSTM32_DW.Memory2_PreviousInput = 1.9F;
 
-    /* InitializeConditions for Memory: '<S10>/Memory' */
+    /* InitializeConditions for Memory: '<S13>/Memory' */
     SteeringWheelSTM32_DW.Memory_PreviousInput = 1.9F;
 
-    /* InitializeConditions for Memory: '<S10>/Memory1' */
+    /* InitializeConditions for Memory: '<S13>/Memory1' */
     SteeringWheelSTM32_DW.Memory1_PreviousInput = 1.9F;
 
     /* SystemInitialize for Enabled SubSystem: '<Root>/CAN TX' */
@@ -874,11 +903,14 @@ void SteeringWheelSTM32_initialize(void)
 
     /* End of SystemInitialize for SubSystem: '<Root>/Enabled Subsystem1' */
 
-    /* Start for MATLABSystem: '<S12>/Analog to Digital Converter' */
+    /* Start for MATLABSystem: '<S15>/Analog to Digital Converter' */
     SteeringWheelSTM32_DW.obj.isInitialized = 0;
     SteeringWheelSTM32_DW.obj.matlabCodegenIsDeleted = false;
     SteeringWheelS_SystemCore_setup(&SteeringWheelSTM32_DW.obj);
   }
+
+  /* user code (Initialize function Body) */
+  LL_TIM_EnableCounter(TIM2);
 }
 
 /* Model terminate function */
@@ -886,7 +918,7 @@ void SteeringWheelSTM32_terminate(void)
 {
   uint32_T SPIPinsLoc;
 
-  /* Terminate for MATLABSystem: '<S12>/Analog to Digital Converter' */
+  /* Terminate for MATLABSystem: '<S15>/Analog to Digital Converter' */
   if (!SteeringWheelSTM32_DW.obj.matlabCodegenIsDeleted) {
     SteeringWheelSTM32_DW.obj.matlabCodegenIsDeleted = true;
     if ((SteeringWheelSTM32_DW.obj.isInitialized == 1) &&
@@ -896,7 +928,7 @@ void SteeringWheelSTM32_terminate(void)
     }
   }
 
-  /* End of Terminate for MATLABSystem: '<S12>/Analog to Digital Converter' */
+  /* End of Terminate for MATLABSystem: '<S15>/Analog to Digital Converter' */
 
   /* Terminate for Enabled SubSystem: '<Root>/CAN TX' */
   /* Terminate for MATLABSystem: '<S2>/SPI Controller Transfer' */

@@ -53,6 +53,7 @@ ert_main.o: \
  C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_bus.h \
  C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_pwr.h \
  C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_spi.h \
+ C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_tim.h \
  C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_gpio.h \
  C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/include/mw_stm32_types.h \
  C:/Users/will/Desktop/SteeringWheelSTM32/STW/SteeringWheelSTM32_ert_rtw/SteeringWheelSTM32_types.h \
@@ -115,6 +116,7 @@ C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Drive
 C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_bus.h:
 C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_pwr.h:
 C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_spi.h:
+C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_tim.h:
 C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_gpio.h:
 C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/include/mw_stm32_types.h:
 C:/Users/will/Desktop/SteeringWheelSTM32/STW/SteeringWheelSTM32_ert_rtw/SteeringWheelSTM32_types.h:

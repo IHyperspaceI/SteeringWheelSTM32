@@ -48,6 +48,7 @@ stm_adc_ll.o: \
  C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_bus.h \
  C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_pwr.h \
  C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_spi.h \
+ C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_tim.h \
  C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_gpio.h \
  C:/Program\ Files/MATLAB/R2024b/toolbox/target/shared/armcortexmbase/scheduler/include/SysTickScheduler.h \
  C:/Program\ Files/MATLAB/R2024b/toolbox/target/shared/armcortexmbase/scheduler/include/arm_cortex_m_multitasking.h \
@@ -102,6 +103,7 @@ C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Drive
 C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_bus.h:
 C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_pwr.h:
 C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_spi.h:
+C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_tim.h:
 C:/Users/will/Desktop/SteeringWheelSTM32/STW/STWCube/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_gpio.h:
 C:/Program\ Files/MATLAB/R2024b/toolbox/target/shared/armcortexmbase/scheduler/include/SysTickScheduler.h:
 C:/Program\ Files/MATLAB/R2024b/toolbox/target/shared/armcortexmbase/scheduler/include/arm_cortex_m_multitasking.h:

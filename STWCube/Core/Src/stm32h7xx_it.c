@@ -214,6 +214,20 @@ __attribute__((weak)) void DMA1_Stream0_IRQHandler (void)
 }
 
 /**
+  * @brief This function handles ADC1 and ADC2 global interrupts.
+  */
+__attribute__((weak)) void ADC_IRQHandler (void)
+{
+  /* USER CODE BEGIN ADC_IRQn 0 */
+
+  /* USER CODE END ADC_IRQn 0 */
+
+  /* USER CODE BEGIN ADC_IRQn 1 */
+
+  /* USER CODE END ADC_IRQn 1 */
+}
+
+/**
   * @brief This function handles TIM1 update interrupt.
   */
 __attribute__((weak)) void TIM1_UP_IRQHandler (void)

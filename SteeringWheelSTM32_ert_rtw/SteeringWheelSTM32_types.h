@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'SteeringWheelSTM32'.
  *
- * Model version                  : 13.117
+ * Model version                  : 13.121
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Thu May 21 19:51:06 2026
+ * C/C++ source code generated on : Sat May 23 22:25:23 2026
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
@@ -60,7 +60,7 @@ typedef struct tag_eH4w3s88qRk3dEce3kceRG stm32cube_blocks_SPIControlle_T;
 
 #endif                             /* typedef_stm32cube_blocks_SPIControlle_T */
 
-/* Custom Type definition for MATLABSystem: '<S12>/Analog to Digital Converter' */
+/* Custom Type definition for MATLABSystem: '<S15>/Analog to Digital Converter' */
 #include "stm_adc_ll.h"
 #include "stm_adc_ll.h"
 #ifndef struct_tag_zOwLqZHHwTkA89oP5eJ7RB
@@ -100,6 +100,23 @@ struct tag_GSKovyH6bCN42HwFzVB4DE
 typedef struct tag_GSKovyH6bCN42HwFzVB4DE stm32cube_blocks_DigitalPortR_T;
 
 #endif                             /* typedef_stm32cube_blocks_DigitalPortR_T */
+
+#ifndef struct_tag_tsKyPuhWUdS8zBSeRGR2aC
+#define struct_tag_tsKyPuhWUdS8zBSeRGR2aC
+
+struct tag_tsKyPuhWUdS8zBSeRGR2aC
+{
+  int32_T isInitialized;
+};
+
+#endif                                 /* struct_tag_tsKyPuhWUdS8zBSeRGR2aC */
+
+#ifndef typedef_stm32cube_blocks_DigitalPortW_T
+#define typedef_stm32cube_blocks_DigitalPortW_T
+
+typedef struct tag_tsKyPuhWUdS8zBSeRGR2aC stm32cube_blocks_DigitalPortW_T;
+
+#endif                             /* typedef_stm32cube_blocks_DigitalPortW_T */
 
 /* Forward declaration for rtModel */
 typedef struct tag_RTM_SteeringWheelSTM32_T RT_MODEL_SteeringWheelSTM32_T;

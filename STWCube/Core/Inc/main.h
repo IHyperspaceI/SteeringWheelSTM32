@@ -41,6 +41,7 @@ extern "C" {
 #include "stm32h7xx_ll_spi.h"
 #include "stm32h7xx_ll_tim.h"
 #include "stm32h7xx_ll_gpio.h"
+#include "stm32h7xx_ll_hsem.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -64,17 +65,18 @@ extern "C" {
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
+void MX_GPIO_Init(void);
+void MX_DMA_Init(void);
+void MX_ADC1_Init(void);
+void MX_SPI1_Init(void);
+void MX_TIM2_Init(void);
 
 /* USER CODE BEGIN EFP */
 
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-void   MX_GPIO_Init(void);
-void   MX_DMA_Init(void);
-void   MX_ADC1_Init(void);
-void   MX_SPI1_Init(void);
-void   MX_TIM2_Init(void);
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

@@ -207,7 +207,6 @@ __attribute__((weak)) void DMA1_Stream0_IRQHandler (void)
   /* USER CODE BEGIN DMA1_Stream0_IRQn 0 */
 
   /* USER CODE END DMA1_Stream0_IRQn 0 */
-
   /* USER CODE BEGIN DMA1_Stream0_IRQn 1 */
 
   /* USER CODE END DMA1_Stream0_IRQn 1 */
@@ -221,7 +220,6 @@ __attribute__((weak)) void ADC_IRQHandler (void)
   /* USER CODE BEGIN ADC_IRQn 0 */
 
   /* USER CODE END ADC_IRQn 0 */
-
   /* USER CODE BEGIN ADC_IRQn 1 */
 
   /* USER CODE END ADC_IRQn 1 */
@@ -244,4 +242,3 @@ __attribute__((weak)) void TIM1_UP_IRQHandler (void)
 /* USER CODE BEGIN 1 */
 
 /* USER CODE END 1 */
-

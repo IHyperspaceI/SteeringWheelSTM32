@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'SteeringWheelSTM32'.
  *
- * Model version                  : 13.121
+ * Model version                  : 13.142
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Sat May 23 22:25:23 2026
+ * C/C++ source code generated on : Tue May 26 16:12:36 2026
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
@@ -83,6 +83,8 @@ extern void S_SPIControllerTransfer1_d_Init(DW_SPIControllerTransfer1_S_f_T
   *localDW);
 extern void Steeri_SPIControllerTransfer1_p(const uint8_T rtu_0[3],
   DW_SPIControllerTransfer1_S_f_T *localDW);
+extern void SteeringWheelST_MATLABFunction1(real32_T rtu_Voltage, uint8_T rtu_In,
+  real_T rtu_N, uint8_T *rty_Position, DW_MATLABFunction1_SteeringWh_T *localDW);
 extern void Ste_SPIControllerTransfer1_Term(DW_SPIControllerTransfer1_Ste_T
   *localDW);
 extern void S_SPIControllerTransfer1_o_Term(DW_SPIControllerTransfer1_S_f_T

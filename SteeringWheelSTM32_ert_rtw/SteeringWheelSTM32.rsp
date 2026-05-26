@@ -12,6 +12,8 @@ stm32h7xx_it.o
 stm32h7xx_hal_msp.o
 stm32h7xx_hal_timebase_tim.o
 stm32h7xx_ll_exti.o
+stm32h7xx_hal_tim.o
+stm32h7xx_hal_tim_ex.o
 stm32h7xx_ll_gpio.o
 stm32h7xx_ll_adc.o
 stm32h7xx_ll_dma.o
@@ -34,8 +36,6 @@ stm32h7xx_hal_i2c.o
 stm32h7xx_hal_i2c_ex.o
 stm32h7xx_hal_exti.o
 stm32h7xx_ll_spi.o
-stm32h7xx_hal_tim.o
-stm32h7xx_hal_tim_ex.o
 stm32h7xx_ll_tim.o
 system_stm32h7xx.o
 syscalls.o

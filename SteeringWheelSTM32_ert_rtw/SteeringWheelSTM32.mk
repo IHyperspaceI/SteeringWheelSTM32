@@ -2,7 +2,7 @@
 ## Makefile generated for component 'SteeringWheelSTM32'. 
 ## 
 ## Makefile     : SteeringWheelSTM32.mk
-## Generated on : Tue May 26 16:09:44 2026
+## Generated on : Sun Jun 07 22:52:45 2026
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/SteeringWheelSTM32.elf
 ## Product type : executable
 ## 
@@ -23,7 +23,7 @@ MAKEFILE                  = SteeringWheelSTM32.mk
 MATLAB_ROOT               = C:/PROGRA~1/MATLAB/R2024b
 MATLAB_BIN                = C:/PROGRA~1/MATLAB/R2024b/bin
 MATLAB_ARCH_BIN           = $(MATLAB_BIN)/win64
-START_DIR                 = C:/Users/oxbro/Documents/STM32CustomProjects/SteeringWheelSTM32
+START_DIR                 = C:/Users/William/Downloads/SteeringWheelSTM32
 SOLVER                    = 
 SOLVER_OBJ                = 
 CLASSIC_INTERFACE         = 0
@@ -211,11 +211,11 @@ INCLUDES = $(INCLUDES_BUILDINFO)
 ## DEFINES
 ###########################################################################
 
-DEFINES_ = -DMW_ADC1_ENABLED=1 -DMW_ADC1_VAR=mw_adc1 -DMW_ADC1_DMA_ENABLED=DMA1_Stream0_IRQHandler -DMW_ADC1_DMA1_Stream0_TC_ENABLED=1 -DMW_ADC1_DMA_STREAM=0 -DMW_ADC1_DMA_BUFFER_SIZE=10 -DMW_SPI1 -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DUSE_FULL_LL_DRIVER -DUSE_PWR_LDO_SUPPLY -DSTM32H7A3xx -DUSE_HAL_DRIVER -DMW_TIMEBASESOURCE=TIM1
+DEFINES_ = -DMW_ADC1_ENABLED=1 -DMW_ADC1_VAR=mw_adc1 -DMW_ADC1_REG_IRQ_ENABLED=1 -DMW_SPI1 -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DUSE_FULL_LL_DRIVER -DUSE_PWR_LDO_SUPPLY -DSTM32H7A3xx -DUSE_HAL_DRIVER -DMW_TIMEBASESOURCE=TIM1
 DEFINES_BUILD_ARGS = -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTERMFCN=1 -DONESTEPFCN=1 -DMAT_FILE=0 -DMULTI_INSTANCE_CODE=0 -DINTEGER_CODE=0 -DMT=0
 DEFINES_CUSTOM = 
 DEFINES_OPTS = -DTID01EQ=0
-DEFINES_SKIPFORSIL = -DXCP_CUSTOM_PLATFORM -DXCP_MEM_DAQ_RESERVED_POOL_BLOCKS_NUMBER=10 -D__FPU_PRESENT=1U -D__FPU_USED=1U -DSTACK_SIZE=2048 -DRT
+DEFINES_SKIPFORSIL = -DXCP_CUSTOM_PLATFORM -DXCP_MEM_DAQ_RESERVED_POOL_BLOCKS_NUMBER=10 -D__FPU_PRESENT=1U -D__FPU_USED=1U -DSTACK_SIZE=512 -DRT
 DEFINES_STANDARD = -DMODEL=SteeringWheelSTM32 -DNUMST=1 -DNCSTATES=0 -DHAVESTDIO -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0
 
 DEFINES = $(DEFINES_) $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(DEFINES_SKIPFORSIL) $(DEFINES_STANDARD)
@@ -224,7 +224,7 @@ DEFINES = $(DEFINES_) $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/stm_adc_ll.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/mw_stm32_spi_ll.c $(START_DIR)/SteeringWheelSTM32_ert_rtw/SteeringWheelSTM32.c $(START_DIR)/SteeringWheelSTM32_ert_rtw/SteeringWheelSTM32_data.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/overrideHALDelay.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/platform_timer.c $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/src/SysTickScheduler.c $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/src/m3m4m4f_multitasking.c $(START_DIR)/STWCube/Core/Src/main.c $(START_DIR)/STWCube/Core/Src/stm32h7xx_it.c $(START_DIR)/STWCube/Core/Src/stm32h7xx_hal_msp.c $(START_DIR)/STWCube/Core/Src/stm32h7xx_hal_timebase_tim.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_exti.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_gpio.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_adc.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_dma.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_rcc.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_utils.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_spi.c $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_tim.c $(START_DIR)/STWCube/Core/Src/system_stm32h7xx.c $(START_DIR)/STWCube/STM32CubeIDE/Application/User/Core/syscalls.c $(START_DIR)/STWCube/STM32CubeIDE/Application/User/Core/sysmem.c $(START_DIR)/STWCube/STM32CubeIDE/Application/User/Startup/startup_stm32h7a3ritx.s
+SRCS = C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/stm_adc_ll.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/mw_stm32_spi_ll.c $(START_DIR)/SteeringWheelSTM32_ert_rtw/SteeringWheelSTM32.c $(START_DIR)/SteeringWheelSTM32_ert_rtw/SteeringWheelSTM32_data.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/overrideHALDelay.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/platform_timer.c $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/src/SysTickScheduler.c $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/src/m3m4m4f_multitasking.c $(START_DIR)/STWCube/STWCube2/Core/Src/main.c $(START_DIR)/STWCube/STWCube2/Core/Src/stm32h7xx_it.c $(START_DIR)/STWCube/STWCube2/Core/Src/stm32h7xx_hal_msp.c $(START_DIR)/STWCube/STWCube2/Core/Src/stm32h7xx_hal_timebase_tim.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_exti.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_gpio.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_adc.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_dma.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_rcc.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_utils.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_spi.c $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_tim.c $(START_DIR)/STWCube/STWCube2/Core/Src/system_stm32h7xx.c $(START_DIR)/STWCube/STWCube2/STM32CubeIDE/Application/User/Core/syscalls.c $(START_DIR)/STWCube/STWCube2/STM32CubeIDE/Application/User/Core/sysmem.c $(START_DIR)/STWCube/STWCube2/STM32CubeIDE/Application/User/Startup/startup_stm32h7a3ritx.s
 
 MAIN_SRC = $(START_DIR)/SteeringWheelSTM32_ert_rtw/ert_main.c
 
@@ -284,7 +284,7 @@ CPPFLAGS += $(CPPFLAGS_SKIPFORSIL) $(CPPFLAGS_BASIC)
 # C++ Linker
 #---------------
 
-CPP_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m7 -mthumb -mlittle-endian -mfloat-abi=hard -mfpu=fpv5-d16 --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\oxbro\Documents\STM32CustomProjects\SteeringWheelSTM32\STWCube\STM32CubeIDE\STM32H7A3RITX_FLASH.ld"
+CPP_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m7 -mthumb -mlittle-endian -mfloat-abi=hard -mfpu=fpv5-d16 --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\William\Downloads\SteeringWheelSTM32\STWCube\STWCube2\STM32CubeIDE\STM32H7A3RITX_FLASH.ld"
 
 CPP_LDFLAGS += $(CPP_LDFLAGS_SKIPFORSIL)
 
@@ -292,7 +292,7 @@ CPP_LDFLAGS += $(CPP_LDFLAGS_SKIPFORSIL)
 # C++ Shared Library Linker
 #------------------------------
 
-CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m7 -mthumb -mlittle-endian -mfloat-abi=hard -mfpu=fpv5-d16 --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\oxbro\Documents\STM32CustomProjects\SteeringWheelSTM32\STWCube\STM32CubeIDE\STM32H7A3RITX_FLASH.ld"
+CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m7 -mthumb -mlittle-endian -mfloat-abi=hard -mfpu=fpv5-d16 --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\William\Downloads\SteeringWheelSTM32\STWCube\STWCube2\STM32CubeIDE\STM32H7A3RITX_FLASH.ld"
 
 CPP_SHAREDLIB_LDFLAGS += $(CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL)
 
@@ -300,7 +300,7 @@ CPP_SHAREDLIB_LDFLAGS += $(CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL)
 # Linker
 #-----------
 
-LDFLAGS_SKIPFORSIL = -mcpu=cortex-m7 -mthumb -mlittle-endian -mfloat-abi=hard -mfpu=fpv5-d16 --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\oxbro\Documents\STM32CustomProjects\SteeringWheelSTM32\STWCube\STM32CubeIDE\STM32H7A3RITX_FLASH.ld"
+LDFLAGS_SKIPFORSIL = -mcpu=cortex-m7 -mthumb -mlittle-endian -mfloat-abi=hard -mfpu=fpv5-d16 --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\William\Downloads\SteeringWheelSTM32\STWCube\STWCube2\STM32CubeIDE\STM32H7A3RITX_FLASH.ld"
 
 LDFLAGS += $(LDFLAGS_SKIPFORSIL)
 
@@ -324,7 +324,7 @@ MEX_CFLAGS += $(MEX_Compiler_BASIC)
 # Shared Library Linker
 #--------------------------
 
-SHAREDLIB_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m7 -mthumb -mlittle-endian -mfloat-abi=hard -mfpu=fpv5-d16 --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\oxbro\Documents\STM32CustomProjects\SteeringWheelSTM32\STWCube\STM32CubeIDE\STM32H7A3RITX_FLASH.ld"
+SHAREDLIB_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m7 -mthumb -mlittle-endian -mfloat-abi=hard -mfpu=fpv5-d16 --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\William\Downloads\SteeringWheelSTM32\STWCube\STWCube2\STM32CubeIDE\STM32H7A3RITX_FLASH.ld"
 
 SHAREDLIB_LDFLAGS += $(SHAREDLIB_LDFLAGS_SKIPFORSIL)
 
@@ -647,139 +647,139 @@ m3m4m4f_multitasking.o : $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/sch
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-main.o : $(START_DIR)/STWCube/Core/Src/main.c
+main.o : $(START_DIR)/STWCube/STWCube2/Core/Src/main.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_it.o : $(START_DIR)/STWCube/Core/Src/stm32h7xx_it.c
+stm32h7xx_it.o : $(START_DIR)/STWCube/STWCube2/Core/Src/stm32h7xx_it.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_hal_msp.o : $(START_DIR)/STWCube/Core/Src/stm32h7xx_hal_msp.c
+stm32h7xx_hal_msp.o : $(START_DIR)/STWCube/STWCube2/Core/Src/stm32h7xx_hal_msp.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_hal_timebase_tim.o : $(START_DIR)/STWCube/Core/Src/stm32h7xx_hal_timebase_tim.c
+stm32h7xx_hal_timebase_tim.o : $(START_DIR)/STWCube/STWCube2/Core/Src/stm32h7xx_hal_timebase_tim.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_ll_exti.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_exti.c
+stm32h7xx_ll_exti.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_exti.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_hal_tim.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c
+stm32h7xx_hal_tim.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_hal_tim_ex.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c
+stm32h7xx_hal_tim_ex.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_ll_gpio.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_gpio.c
+stm32h7xx_ll_gpio.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_gpio.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_ll_adc.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_adc.c
+stm32h7xx_ll_adc.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_adc.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_ll_dma.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_dma.c
+stm32h7xx_ll_dma.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_dma.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_ll_rcc.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_rcc.c
+stm32h7xx_ll_rcc.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_rcc.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_ll_utils.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_utils.c
+stm32h7xx_ll_utils.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_utils.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_hal_rcc.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c
+stm32h7xx_hal_rcc.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_hal_rcc_ex.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c
+stm32h7xx_hal_rcc_ex.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_hal_flash.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c
+stm32h7xx_hal_flash.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_hal_flash_ex.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c
+stm32h7xx_hal_flash_ex.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_hal_gpio.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c
+stm32h7xx_hal_gpio.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_hal_hsem.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c
+stm32h7xx_hal_hsem.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_hal_dma.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c
+stm32h7xx_hal_dma.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_hal_dma_ex.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c
+stm32h7xx_hal_dma_ex.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_hal_mdma.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c
+stm32h7xx_hal_mdma.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_hal_pwr.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c
+stm32h7xx_hal_pwr.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_hal_pwr_ex.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c
+stm32h7xx_hal_pwr_ex.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_hal_cortex.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c
+stm32h7xx_hal_cortex.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_hal.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c
+stm32h7xx_hal.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_hal_i2c.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c
+stm32h7xx_hal_i2c.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_hal_i2c_ex.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c
+stm32h7xx_hal_i2c_ex.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_hal_exti.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c
+stm32h7xx_hal_exti.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_ll_spi.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_spi.c
+stm32h7xx_ll_spi.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_spi.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32h7xx_ll_tim.o : $(START_DIR)/STWCube/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_tim.c
+stm32h7xx_ll_tim.o : $(START_DIR)/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_tim.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-system_stm32h7xx.o : $(START_DIR)/STWCube/Core/Src/system_stm32h7xx.c
+system_stm32h7xx.o : $(START_DIR)/STWCube/STWCube2/Core/Src/system_stm32h7xx.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-syscalls.o : $(START_DIR)/STWCube/STM32CubeIDE/Application/User/Core/syscalls.c
+syscalls.o : $(START_DIR)/STWCube/STWCube2/STM32CubeIDE/Application/User/Core/syscalls.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-sysmem.o : $(START_DIR)/STWCube/STM32CubeIDE/Application/User/Core/sysmem.c
+sysmem.o : $(START_DIR)/STWCube/STWCube2/STM32CubeIDE/Application/User/Core/sysmem.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-startup_stm32h7a3ritx.o : $(START_DIR)/STWCube/STM32CubeIDE/Application/User/Startup/startup_stm32h7a3ritx.s
+startup_stm32h7a3ritx.o : $(START_DIR)/STWCube/STWCube2/STM32CubeIDE/Application/User/Startup/startup_stm32h7a3ritx.s
 	$(AS) $(ASFLAGS) -o "$@" "$<"
 
 

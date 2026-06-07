@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'SteeringWheelSTM32'.
  *
- * Model version                  : 13.142
+ * Model version                  : 13.145
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Tue May 26 16:12:36 2026
+ * C/C++ source code generated on : Sun Jun  7 22:52:02 2026
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
@@ -23,6 +23,7 @@
 #include "SteeringWheelSTM32_private.h"
 #include "mw_stm32_spi_ll.h"
 #include "stm_adc_ll.h"
+#include <stddef.h>
 
 /* Block signals (default storage) */
 B_SteeringWheelSTM32_T SteeringWheelSTM32_B;
@@ -229,20 +230,22 @@ void SteeringWheelST_MATLABFunction1(real32_T rtu_Voltage, uint8_T rtu_In,
 static void SteeringWheelS_SystemCore_setup(stm32cube_blocks_AnalogInputF_T *obj)
 {
   ADC_Type_T adcStructLoc;
+  obj->isSetupComplete = false;
 
   /* Start for MATLABSystem: '<S7>/Analog to Digital Converter' */
   obj->isInitialized = 1;
-  obj->ADCInternalBuffer = GET_ADC1_DMA_BUFFER();
+  adcStructLoc.InternalBufferPtr = (void *)(NULL);
+
+  /* Start for MATLABSystem: '<S7>/Analog to Digital Converter' */
   adcStructLoc.InjectedNoOfConversion = 0U;
-  adcStructLoc.InternalBufferPtr = obj->ADCInternalBuffer;
   adcStructLoc.peripheralPtr = ADC1;
-  adcStructLoc.dmaPeripheralPtr = DMA1;
-  adcStructLoc.dmastream = LL_DMA_STREAM_0;
-  adcStructLoc.DataTransferMode = ADC_DMA_CIRCULAR;
+  adcStructLoc.dmaPeripheralPtr = NULL;
+  adcStructLoc.dmastream = 0;
+  adcStructLoc.DataTransferMode = ADC_DR_TRANSFER;
   adcStructLoc.DmaTransferMode = ADC_DMA_TRANSFER_LIMITED;
   adcStructLoc.InternalBufferSize = 5U;
   adcStructLoc.RegularNoOfConversion = 5U;
-  obj->ADCHandle = ADC_Handle_Init(&adcStructLoc, ADC_DMA_INTERRUPT_MODE, 1,
+  obj->ADCHandle = ADC_Handle_Init(&adcStructLoc, ADC_INTERRUPT_MODE, 1,
     ADC_READ, LL_ADC_REG_SEQ_SCAN_ENABLE_5RANKS);
   enableADCAutomaticCalibration(obj->ADCHandle, (uint32_T)LL_ADC_CALIB_OFFSET, 2);
   enableADC(obj->ADCHandle);
@@ -264,8 +267,8 @@ void SteeringWheelSTM32_step(void)
   boolean_T rtb_Step1_tmp;
 
   /* MATLABSystem: '<S7>/Analog to Digital Converter' */
-  regularReadADCDMA(SteeringWheelSTM32_DW.obj.ADCHandle, ADC_READ,
-                    &rtb_AnalogtoDigitalConverter_0[0]);
+  regularReadADCIntr(SteeringWheelSTM32_DW.obj.ADCHandle, ADC_READ,
+                     &rtb_AnalogtoDigitalConverter_0[0]);
   for (i = 0; i < 5; i++) {
     /* Gain: '<Root>/Gain4' incorporates:
      *  MATLABSystem: '<S7>/Analog to Digital Converter'
@@ -647,7 +650,7 @@ void SteeringWheelSTM32_step(void)
      *  length                  = 8
      *  desiredSignalByteLayout = LITTLEENDIAN
      *  dataType                = UNSIGNED
-     *  factor                  = 1.0
+     *  factor                  = 0.0129
      *  offset                  = 0.0
      *  minimum                 = 0.0
      *  maximum                 = 0.0
@@ -658,7 +661,9 @@ void SteeringWheelSTM32_step(void)
       {
         real32_T result = SteeringWheelSTM32_B.Gain4[3];
 
-        /* no scaling required */
+        /* no offset to apply */
+        result = result * (1 / 0.0129F);
+
         /* round to closest integer value for integer CAN signal */
         outValue = roundf(result);
       }
@@ -687,7 +692,7 @@ void SteeringWheelSTM32_step(void)
      *  length                  = 8
      *  desiredSignalByteLayout = LITTLEENDIAN
      *  dataType                = UNSIGNED
-     *  factor                  = 1.0
+     *  factor                  = 0.0129
      *  offset                  = 0.0
      *  minimum                 = 0.0
      *  maximum                 = 0.0
@@ -698,7 +703,9 @@ void SteeringWheelSTM32_step(void)
       {
         real32_T result = SteeringWheelSTM32_B.Gain4[4];
 
-        /* no scaling required */
+        /* no offset to apply */
+        result = result * (1 / 0.0129F);
+
         /* round to closest integer value for integer CAN signal */
         outValue = roundf(result);
       }
@@ -951,8 +958,8 @@ void SteeringWheelSTM32_terminate(void)
     SteeringWheelSTM32_DW.obj.matlabCodegenIsDeleted = true;
     if ((SteeringWheelSTM32_DW.obj.isInitialized == 1) &&
         SteeringWheelSTM32_DW.obj.isSetupComplete) {
-      ADC_Handle_Deinit(SteeringWheelSTM32_DW.obj.ADCHandle,
-                        ADC_DMA_INTERRUPT_MODE, 1);
+      ADC_Handle_Deinit(SteeringWheelSTM32_DW.obj.ADCHandle, ADC_INTERRUPT_MODE,
+                        1);
     }
   }
 

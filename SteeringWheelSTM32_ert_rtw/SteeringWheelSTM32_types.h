@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'SteeringWheelSTM32'.
  *
- * Model version                  : 13.142
+ * Model version                  : 13.145
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Tue May 26 16:12:36 2026
+ * C/C++ source code generated on : Sun Jun  7 22:52:02 2026
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
@@ -63,27 +63,6 @@ typedef struct tag_eH4w3s88qRk3dEce3kceRG stm32cube_blocks_SPIControlle_T;
 /* Custom Type definition for MATLABSystem: '<S7>/Analog to Digital Converter' */
 #include "stm_adc_ll.h"
 #include "stm_adc_ll.h"
-#ifndef struct_tag_zOwLqZHHwTkA89oP5eJ7RB
-#define struct_tag_zOwLqZHHwTkA89oP5eJ7RB
-
-struct tag_zOwLqZHHwTkA89oP5eJ7RB
-{
-  boolean_T matlabCodegenIsDeleted;
-  int32_T isInitialized;
-  boolean_T isSetupComplete;
-  ADC_Type_T* ADCHandle;
-  uint32_T * ADCInternalBuffer;
-};
-
-#endif                                 /* struct_tag_zOwLqZHHwTkA89oP5eJ7RB */
-
-#ifndef typedef_stm32cube_blocks_AnalogInputF_T
-#define typedef_stm32cube_blocks_AnalogInputF_T
-
-typedef struct tag_zOwLqZHHwTkA89oP5eJ7RB stm32cube_blocks_AnalogInputF_T;
-
-#endif                             /* typedef_stm32cube_blocks_AnalogInputF_T */
-
 #ifndef struct_tag_GSKovyH6bCN42HwFzVB4DE
 #define struct_tag_GSKovyH6bCN42HwFzVB4DE
 
@@ -100,6 +79,26 @@ struct tag_GSKovyH6bCN42HwFzVB4DE
 typedef struct tag_GSKovyH6bCN42HwFzVB4DE stm32cube_blocks_DigitalPortR_T;
 
 #endif                             /* typedef_stm32cube_blocks_DigitalPortR_T */
+
+#ifndef struct_tag_be7na45LnWdcY3Ngt9EG6
+#define struct_tag_be7na45LnWdcY3Ngt9EG6
+
+struct tag_be7na45LnWdcY3Ngt9EG6
+{
+  boolean_T matlabCodegenIsDeleted;
+  int32_T isInitialized;
+  boolean_T isSetupComplete;
+  ADC_Type_T* ADCHandle;
+};
+
+#endif                                 /* struct_tag_be7na45LnWdcY3Ngt9EG6 */
+
+#ifndef typedef_stm32cube_blocks_AnalogInputF_T
+#define typedef_stm32cube_blocks_AnalogInputF_T
+
+typedef struct tag_be7na45LnWdcY3Ngt9EG6 stm32cube_blocks_AnalogInputF_T;
+
+#endif                             /* typedef_stm32cube_blocks_AnalogInputF_T */
 
 /* Forward declaration for rtModel */
 typedef struct tag_RTM_SteeringWheelSTM32_T RT_MODEL_SteeringWheelSTM32_T;

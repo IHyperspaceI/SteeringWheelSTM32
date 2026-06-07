@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'SteeringWheelSTM32'.
  *
- * Model version                  : 13.142
+ * Model version                  : 13.145
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Tue May 26 16:12:36 2026
+ * C/C++ source code generated on : Sun Jun  7 22:52:02 2026
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
@@ -67,8 +67,8 @@ int main(int argc, char **argv)
   MX_DMA_Init();
   MX_ADC1_Init();
   configureADCChannelPreselectionRegister(ADC1,5 ,0);
-  MX_SPI1_Init();
   MX_TIM2_Init();
+  MX_SPI1_Init();
   rtmSetErrorStatus(SteeringWheelSTM32_M, 0);
   SteeringWheelSTM32_initialize();
   __disable_irq();

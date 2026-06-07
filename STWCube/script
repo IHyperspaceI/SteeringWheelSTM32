@@ -1,9 +1,9 @@
-config load "C:\Users\oxbro\Documents\STM32CustomProjects\SteeringWheelSTM32\STWCube\STWCube.ioc"
+config load "C:\Users\William\Downloads\SteeringWheelSTM32\STWCube\STWCube.ioc"
 project toolchain STM32CubeIDE
 
 SetStructure Advanced
 
-project setCustomFWPath "C:\Users\oxbro\STM32Cube\Repository\STM32Cube_FW_H7_V1.9.1"
+project setCustomFWPath "C:\Users\William\STM32Cube\Repository\STM32Cube_FW_H7_V1.9.1"
 
 project generate 
 

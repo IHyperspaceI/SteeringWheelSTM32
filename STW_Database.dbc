@@ -37,8 +37,8 @@ BU_:
 
 
 BO_ 507 SteeringWheelTest: 6 Vector__XXX
- SG_ VRegenPaddle2 : 24|8@1+ (1,0) [0|3.3] "" Vector__XXX
- SG_ VRegenPaddle1 : 16|8@1+ (1,0) [0|3.3] "" Vector__XXX
+ SG_ VRegenPaddle2 : 24|8@1+ (0.0129,0) [0|3.2895] "" Vector__XXX
+ SG_ VRegenPaddle1 : 16|8@1+ (0.0129,0) [0|3.2895] "" Vector__XXX
  SG_ NEventModeRotary : 12|4@1+ (1,1) [1|16] "" Vector__XXX
  SG_ NParameterSelectRotary : 8|4@1+ (1,1) [1|16] "" Vector__XXX
  SG_ NPageSelectRotary : 4|4@1+ (1,1) [1|16] "" Vector__XXX

@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'SteeringWheelSTM32'.
  *
- * Model version                  : 13.145
+ * Model version                  : 13.148
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Sun Jun  7 22:52:02 2026
+ * C/C++ source code generated on : Mon Jun  8 11:07:56 2026
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
@@ -137,7 +137,7 @@ typedef struct {
    */
   uint8_T u00normalmode0dontabortpendingt[3];
 
-  /* Pooled Parameter (Expression: [0, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1])
+  /* Pooled Parameter (Expression: [1, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2])
    * Referenced by:
    *   '<S5>/1-D Lookup Table1'
    *   '<S5>/1-D Lookup Table2'

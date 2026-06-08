@@ -68,8 +68,8 @@ void Error_Handler(void);
 void MX_GPIO_Init(void);
 void MX_DMA_Init(void);
 void MX_ADC1_Init(void);
-void MX_TIM2_Init(void);
 void MX_SPI1_Init(void);
+void MX_TIM2_Init(void);
 
 /* USER CODE BEGIN EFP */
 

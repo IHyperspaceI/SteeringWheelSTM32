@@ -14,9 +14,9 @@
 -IC:/ProgramData/MATLAB/SupportPackages/R2024b/3P.instrset/cmsis.instrset/CMSIS/Core/Include
 -IC:/ProgramData/MATLAB/SupportPackages/R2024b/3P.instrset/cmsis_dsp.instrset/Include
 -IC:/ProgramData/MATLAB/SupportPackages/R2024b/3P.instrset/cmsis_dsp.instrset/Include/dsp
--IC:/Users/William/Downloads/SteeringWheelSTM32/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Inc
--IC:/Users/William/Downloads/SteeringWheelSTM32/STWCube/STWCube2/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy
--IC:/Users/William/Downloads/SteeringWheelSTM32/STWCube/STWCube2/Drivers/CMSIS/Device/ST/STM32H7xx/Include
--IC:/Users/William/Downloads/SteeringWheelSTM32/STWCube/STWCube2/Drivers/CMSIS/Include
--IC:/Users/William/Downloads/SteeringWheelSTM32/STWCube/STWCube2/Core/Inc
+-IC:/Users/William/Downloads/SteeringWheelSTM32/STWCube3/Drivers/STM32H7xx_HAL_Driver/Inc
+-IC:/Users/William/Downloads/SteeringWheelSTM32/STWCube3/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy
+-IC:/Users/William/Downloads/SteeringWheelSTM32/STWCube3/Drivers/CMSIS/Device/ST/STM32H7xx/Include
+-IC:/Users/William/Downloads/SteeringWheelSTM32/STWCube3/Drivers/CMSIS/Include
+-IC:/Users/William/Downloads/SteeringWheelSTM32/STWCube3/Core/Inc
 -I../Core/Inc

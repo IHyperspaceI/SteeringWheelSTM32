@@ -1,2 +1,2 @@
 startup_stm32h7a3ritx.o: \
- C:/Users/William/Downloads/SteeringWheelSTM32/STWCube/STWCube2/STM32CubeIDE/Application/User/Startup/startup_stm32h7a3ritx.s
+ C:/Users/William/Downloads/SteeringWheelSTM32/STWCube3/STM32CubeIDE/Application/User/Startup/startup_stm32h7a3ritx.s

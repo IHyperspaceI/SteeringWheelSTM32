@@ -5,6 +5,7 @@ SetStructure Advanced
 
 project setCustomFWPath "C:\Users\William\STM32Cube\Repository\STM32Cube_FW_H7_V1.9.1"
 
-project generate 
+config save C:\Users\William\Downloads\SteeringWheelSTM32\STWCube\STWCube2\STWCube2.ioc
+
 
 exit wait

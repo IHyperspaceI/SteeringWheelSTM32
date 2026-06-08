@@ -1,2 +1,2 @@
 syscalls.o: \
- C:/Users/William/Downloads/SteeringWheelSTM32/STWCube/STWCube2/STM32CubeIDE/Application/User/Core/syscalls.c
+ C:/Users/William/Downloads/SteeringWheelSTM32/STWCube3/STM32CubeIDE/Application/User/Core/syscalls.c

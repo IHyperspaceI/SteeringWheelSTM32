@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'SteeringWheelSTM32'.
  *
- * Model version                  : 13.148
+ * Model version                  : 13.149
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Mon Jun  8 11:07:56 2026
+ * C/C++ source code generated on : Mon Jun  8 11:40:06 2026
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
@@ -344,7 +344,7 @@ void SteeringWheelSTM32_step(void)
    *  Lookup_n-D: '<S5>/1-D Lookup Table1'
    */
   SteeringWheelST_MATLABFunction1(SteeringWheelSTM32_B.Gain4[1],
-    SteeringWheelSTM32_ConstP.pooled5[plook_u32f_binckan
+    SteeringWheelSTM32_ConstP.uDLookupTable1_tableData[plook_u32f_binckan
     (SteeringWheelSTM32_B.Gain4[1], SteeringWheelSTM32_ConstP.pooled4, 15U)],
     50.0, &SteeringWheelSTM32_B.Position_e,
     &SteeringWheelSTM32_DW.sf_MATLABFunction1);
@@ -823,7 +823,7 @@ void SteeringWheelSTM32_step(void)
    *  Sum: '<S11>/FixPt Sum1'
    *  UnitDelay: '<S8>/Output'
    */
-  if ((uint8_T)(SteeringWheelSTM32_DW.Output_DSTATE + 1) > 10) {
+  if ((uint8_T)(SteeringWheelSTM32_DW.Output_DSTATE + 1) > 20) {
     SteeringWheelSTM32_DW.Output_DSTATE = 0U;
   } else {
     SteeringWheelSTM32_DW.Output_DSTATE++;

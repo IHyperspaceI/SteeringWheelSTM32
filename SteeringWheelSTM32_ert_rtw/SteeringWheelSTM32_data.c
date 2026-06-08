@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'SteeringWheelSTM32'.
  *
- * Model version                  : 13.148
+ * Model version                  : 13.149
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Mon Jun  8 11:07:56 2026
+ * C/C++ source code generated on : Mon Jun  8 11:40:06 2026
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
@@ -57,11 +57,15 @@ const ConstP_SteeringWheelSTM32_T SteeringWheelSTM32_ConstP = {
 
   /* Pooled Parameter (Expression: [1, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2])
    * Referenced by:
-   *   '<S5>/1-D Lookup Table1'
    *   '<S5>/1-D Lookup Table2'
    *   '<S5>/1-D Lookup Table3'
    */
-  { 1U, 16U, 15U, 14U, 13U, 12U, 11U, 10U, 9U, 8U, 7U, 6U, 5U, 4U, 3U, 2U }
+  { 1U, 16U, 15U, 14U, 13U, 12U, 11U, 10U, 9U, 8U, 7U, 6U, 5U, 4U, 3U, 2U },
+
+  /* Computed Parameter: uDLookupTable1_tableData
+   * Referenced by: '<S5>/1-D Lookup Table1'
+   */
+  { 16U, 15U, 14U, 13U, 12U, 11U, 10U, 9U, 8U, 7U, 6U, 5U, 4U, 3U, 2U, 1U }
 };
 
 /*
